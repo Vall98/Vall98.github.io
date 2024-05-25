@@ -1,11 +1,50 @@
 /* https://www.w3schools.com/css/css3_animations.asp */
 
-@keyframes main-anim {
-  from {
-    
-  }
-  to {
-    
-  }
+@keyframes fadein {
+    100%   { opacity: 1; }
 }
 
+@keyframes slidein {
+  100% { transform: translateY(0%); }
+}
+
+.name {
+  opacity: 0;
+  animation: fadein 2s forwards;
+}
+
+.slidein {
+  transform: translateY(100vh);
+  animation: slidein 1s forwards;
+}
+
+.color-btn-l {
+  background-color: var(--color-primary);
+  border-color: var(--color-secondary);
+  transition: 0.5s;
+}
+
+.color-btn-s {
+  left: 4px;
+  background-color: var(--color-secondary);
+  transition: 0.5s;
+}
+
+.color-btn-l:hover .color-btn-s {
+  transform: translateX(40px);
+  background-color: var(--color-primary);
+}
+
+.color-btn-l:hover {
+  background-color: var(--color-secondary);
+}
+
+.logo-anim {
+  width: 50px;
+  transition: width 0.5s;
+}
+
+.logo-anim:hover {
+  width: 75px;
+  transition: width 0.5s;
+}

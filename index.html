@@ -1,11 +1,29 @@
-<hmtl>
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./style/animations.css">
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/animations.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <script src="./js/main.js"></script>
   </head>
   <body>
-    <h1>Valentin Lebon</h1>
-    <h2>Welcome to my github.io page</h2>
-    <p>Download my resume here: <a target="_blank" href='./VLEBONresume.pdf'>resume</a></p>
+    <div class="color-btn-wrapper">
+      <button onclick="changePageColors()" class="color-btn-l">
+        <span class="color-btn-s"></span>
+      </button>
+    </div>
+    <div class="landing">
+      <h1 class="name">Valentin Lebon</h1>
+        <div class="slidein">
+          <h2>Welcome to my github.io page</h2>
+          <p>Download my resume <a class="resume" target="_blank" href='./VLEBONresume.pdf'>here</a>.</p>
+        </div>
+    </div>
+      <h1>Skills</h1>
+      <h1>Projects</h1>
   </body>
+  <footer>
+    <a target="_blank" href="https://www.linkedin.com/in/valentin-lebon-84b313144/?locale=en_US">
+      <img class="logo-anim" src="./assets/LinkedIn_logo_initials.png" />
+    </a>
+  </footer>
 </hmtl>

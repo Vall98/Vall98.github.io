@@ -1,3 +1,70 @@
+:root {
+  --name-font-size: 100px;
+  --name-margin-top: 40vh;
+  /*--color-light-brown: rgba(231, 206, 181, 1);
+  --color-dark-brown: rgba(101, 48, 36, 1);
+  --color-light-blue: rgba(152, 216, 234, 1);
+  --color-dark-blue: rgba(5, 38, 92, 1);*/
+  --color-primary: rgba(231, 206, 181, 1);
+  --color-secondary: rgba(101, 48, 36, 1);
+}
+
+@media only screen and (max-width: 688px) {
+  :root {
+    --name-margin-top: 20vh;
+  }
+}
+
 body {
-  background-color: rgba(5, 38, 92, 1);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+footer {
+  background-color: var(--color-secondary);
+  margin: -8px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-btn-wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.color-btn-l {
+  width: 70px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.color-btn-s {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inherit;
+  position: absolute;
+  top: 4px;
+}
+
+.landing {
+  height: 100vh;
+  text-align: center;
+}
+
+.name {
+  font-size: var(--name-font-size);
+  margin-top: max(calc(var(--name-margin-top) - var(--name-font-size)), 100px);
+  margin-bottom: 50px;
+}
+
+.resume {
+  color: var(--color-secondary);
+  font-weight: bold;
 }
