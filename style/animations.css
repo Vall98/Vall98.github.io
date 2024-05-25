@@ -1,7 +1,11 @@
 /* https://www.w3schools.com/css/css3_animations.asp */
 
 @keyframes fadein {
-    100%   { opacity: 1; }
+  100%   { opacity: 1; }
+}
+
+@keyframes fadeout {
+  100%   { opacity: 0; }
 }
 
 @keyframes slidein {
@@ -37,6 +41,12 @@
 
 .color-btn-l:hover {
   background-color: var(--color-secondary);
+}
+
+.down-arrow {
+  opacity: 1;
+  animation: fadeout 1s infinite;
+  animation-delay: calc(var(--arrow)* -0.25s);
 }
 
 .logo-anim {
