@@ -39,6 +39,10 @@ footer {
   align-items: center;
 }
 
+ul {
+  margin-bottom: 5px;
+}
+
 #about, #skills, #projects {
   text-align: center;
 }
@@ -123,6 +127,7 @@ footer {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    width: 100%;
 }
 
 .about-flex, .skills-flex {
