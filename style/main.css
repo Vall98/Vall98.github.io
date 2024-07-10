@@ -117,10 +117,18 @@ footer {
   max-width: 500px;
 }
 
+.page-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .about-flex, .skills-flex {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
 }
 
 .wolf {
